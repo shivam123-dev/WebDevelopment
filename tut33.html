@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            content: "";
+            background: url("https://source.unsplash.com/collection/190727/1600x900");
+            position: absolute;
+            background-repeat: no-repeat;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 370px;
+            justify-content: center;
+            
+        }
+
+        /* section::before{
+            content: "This is a content";
+        }
+        section::after{
+            content: "This is a content";
+        } */
+        .navigation {
+            display: flex;
+            font-size: 23px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            position: sticky;
+            top:0;
+        }
+
+        li {
+            list-style: none;
+            padding: 12px;
+            
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus explicabo ipsum, repudiandae quam
+            eum voluptatum saepe ratione quaerat esse similique quibusdam perferendis?</p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>
