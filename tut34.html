@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* used for giving box-shadow downside */
+            /* box-shadow: 2px 4px green; */
+            /*offset x, offset y, color,*/
+            /* used for giving box-shadow upside */
+            /* box-shadow: -2px -4px 10px grey; */
+            /* box-shadow: 7px 5px 10px grey;  */
+            /* here 10 px is blur radius */
+            /* box-shadow: -2px -4px 10px 12px grey;  */
+            /* here 12px is the spread radius it tells in how much area we want to spread our blurred shadow */
+            box-shadow: -2px -4px 10px 12px grey;
+            /* Types of box shadow syntax: -  */
+            /* box-shadow: offset-x,offset-y,color */
+            /* box-shadow: offset-x,offset-y,blur radius, color */
+            /* box-shadow: offset-x,offset-y,blur radius, spread radius, color */
+
+            /* Used for merging the box shadow inside the box */
+            /* box-shadow: inset 3px 5px chartreuse; */
+
+            /* Used for giving multiple box shadows */
+            box-shadow: 2px 3px green, 3px 4px red;
+        }
+
+        .card h2 {
+            text-shadow: 2px -1px whitesmoke;
+            text-shadow: 2px -1px 2px whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt quisquam sit nobis repellat
+                accusamus, temporibus laboriosam hic ad autem fuga sed explicabo deleniti quis assumenda, quod amet qui!
+                Quaerat fugiat ipsa temporibus eveniet!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt quisquam sit nobis repellat
+                accusamus, temporibus laboriosam hic ad autem fuga sed explicabo deleniti quis assumenda, quod amet qui!
+                Quaerat fugiat ipsa temporibus eveniet!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nesciunt quisquam sit nobis repellat
+                accusamus, temporibus laboriosam hic ad autem fuga sed explicabo deleniti quis assumenda, quod amet qui!
+                Quaerat fugiat ipsa temporibus eveniet!</p>
+        </div>
+    </div>
+</body>
+
+</html>
