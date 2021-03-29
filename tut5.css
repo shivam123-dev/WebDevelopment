@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+h1 {
+  color: palevioletred;
+}
+
+h2 {
+  color: pink;
+}
+
+h3,h4 {
+    color:indigo;
+}
+
+h5,h6 {
+    color: lightcoral;
+}
+
+body{
+    background-color: lightcyan;
+
+}
+
+p {
+    background-color: white;
+}
+
+strong:hover {
+    color: red;
+    cursor: pointer;
+}
+
+em:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+
+hr {
+    background-color: violet;
+    /* color: violet; */
+    height: 10px;
+}
+
+.ab:hover {
+    background-color: black;
+    color: white;
+}
+
+.ab:visited {
+    background-color: violet;
+    color: black;
+}
