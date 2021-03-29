@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            border: 2px solid red;
+            /* Since header is a block element so we can set its width but if it would have been inline then the scenario would have been different */
+            width: 1200px;
+        }
+
+        img {
+            width: 34px;
+            display: block;
+            margin: auto;
+
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+        }
+
+        .container {
+            /* display: inline-block; */
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: gray;
+            margin: 4px 0px;
+            /* margin: 0px; */
+            padding: 23px;
+            display: inline-block;
+            /*Due to inline-block the boxes become both inline and block and hance occupy less space*/
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+            /* This helps in maintaing width, padding and margin of the boxes */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://cdn.pixabay.com/photo/2017/03/14/21/07/logo-2144403__340.png" alt="">
+        <h3>Welcome to my Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quas maiores saepe doloremque laborum
+                iste rerum quod rem nemo ut repudiandae ea blanditiis magni pariatur ducimus! Obcaecati consequatur,
+                aperiam asperiores illo aut in esse ipsa dolorum voluptatum quo quae error ea officia aliquam suscipit.
+            </p>
+
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quas maiores saepe doloremque laborum
+                iste rerum quod rem nemo ut repudiandae ea blanditiis magni pariatur ducimus! Obcaecati consequatur,
+                aperiam asperiores illo aut in esse ipsa dolorum voluptatum quo quae error ea officia aliquam suscipit.
+            </p>
+
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, quas maiores saepe doloremque laborum
+                iste rerum quod rem nemo ut repudiandae ea blanditiis magni pariatur ducimus! Obcaecati consequatur,
+                aperiam asperiores illo aut in esse ipsa dolorum voluptatum quo quae error ea officia aliquam suscipit.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
