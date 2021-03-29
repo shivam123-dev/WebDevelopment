@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS position: static (default), absolute, relative, fixed, sticky */
+      .container {
+        border: 2px solid black;
+        background-color: khaki;
+        height: 344443px;
+      }
+
+      .box {
+        display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+      }
+
+      #box1 {
+        position: static;
+        /* by default */
+      }
+
+      #box3 {
+        /* If we have used the position then we can define top, bottom, right, left properties */
+        /* Realtive property is also used when we want to maintain the gap between the normal positon and relative position and if we don't want this then we use Absolute Property*/
+
+        /* relative:- Positions the element relative to its normal position and will leave a gap at its normal position*/
+        /* position: relative; */
+
+        /* absolute: Positions the element relative to the position of ots first parent */
+        /* position: absolute; */
+        /* top: 34px;
+            left: 34px; */
+
+        /* fixed: Positions the element relative to the browser window */
+        /* position: fixed;
+            right:4px;
+            bottom: 2px; */
+
+        /* sticky: It is a hybrid of relative and fixed position.
+An HTML element with position:sticky; will just sit there until a given position offset is met.*/
+        position: sticky;
+        top: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">Chat with Me</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>
