@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- action = "beackend.php" means that all the data will be submitted in the backend.php file -->
+    <form action="backend.php">
+      <!-- div is a block element and hence another element has to go to another block -->
+      <!--name defines that input -->
+
+      <!-- in label's for we pass the id of that input tag -->
+      <!-- One more benefit of the label tag is that when we click on that label_name it selects the corresponding ID which is associated with that label -->
+      <label for="name">Name</label>
+      <div>
+        <input type="text" name="myName" id="name" />
+      </div>
+      <br />
+      <!--br is not recommened-->
+      <div>Role: <input type="text" name="myRole" /></div>
+      <br />
+      <div>Email: <input type="email" name="myEmail" /></div>
+      <br />
+
+      <div>Date: <input type="date" name="myDate" /></div>
+      <br />
+      <!-- In number e means exponential -->
+      <div>Bonus: <input type="number" name="myBonus" /></div>
+      <br />
+      <div>
+        <!-- Here checked means that the checkbox will be checked by default -->
+        Are you eligible ?
+        <input type="checkbox" name="myEligibility" checked />
+      </div>
+      <br />
+      <div>
+        Gender : Male<input type="radio" name="myGender" /> Female<input
+          type="radio"
+          name="myGender"
+        />
+      </div>
+      <br />
+      <div>
+        <!-- textarea is used when we want to take large input from users -->
+        Write about yourself : <br /><textarea
+          name="myText"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+          <!-- Here selected keyword means that the option will always remain selected -->
+          <option value="Indica" selected>Indica</option>
+          <option value="Swift">Swift</option>
+          <option value="Wagon_R">WagonR</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="Reset Now" />
+      </div>
+    </form>
+  </body>
+</html>
