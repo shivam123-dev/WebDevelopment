@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+            /* Transition-property- It is used to decide which transition property we want to use. For example, if we want to transition background color, then we have to write- */
+            /* transition-property: background-color; */
+
+            /* Transition-duration- If we want to see the duration which is required to make the change, we can use this property. For example, if we set transition duration as 1seconds, then the transition will happen in 1 second only. */
+            /* transition-duration: 1s; */
+
+            /* Transition-timing-function- This property is used to decide the speed of transition from beginning to end. These are of three types as follows- 
+ 
+            ease-in:-After applying this, the animation will start slowly and becomes fast towards the end.
+
+            ease-out:-After applying this, the animation will begin fastly and become slow towards the end.
+
+            ease-in-out:-After applying this, the animation will start slowly, then become fast in the midway, and ends slowly.
+            */
+            /* transition-timing-function: ease-in-out; */
+
+            /* Transition-delay- It is that particular time interval after which the transition effect will start. For example, if we set it as 2s, then the transition effect will start after 2 seconds only. */
+            /* transition-delay: 2s; */
+
+            /* Transition short hand in one line */
+            /* transition: background-color transition-duration transition-timing-function trasition-delay; */
+
+            /* transition: background-color 1s ease-in-out 3s; */
+
+            /* If we want all the properties should go under transition, then we can write- */
+            transition: all 1s ease-in-out .3s;
+        }
+
+        #box:hover {
+            background-color: violet;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS Transition Tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>
