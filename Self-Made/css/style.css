@@ -1,0 +1,175 @@
+/* CSS Reset */
+* {
+    margin:0px;
+    padding: 0px;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+/* Navigation Bar */
+.navbar{
+    display: block;
+    background-color: grey;
+    padding: 12px 20px;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0px 55px;
+    margin: 0px;
+    color: white;
+    font-size: 26px;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+    /* text-emphasis-color: green; */
+}
+.navbar ul li a:visited {
+    text-decoration: underline;
+    /* text-emphasis-color: green; */
+}
+/* Home */
+#home{
+    background-color: crimson;
+
+}
+#home div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home div h2{
+    font-size: 3.8rem;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    color: ghostwhite;
+}
+#home div p{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15vh;
+}
+#home div button{
+    border-radius: 6px;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 20px;
+    margin: 18px;
+    background-color: whitesmoke;
+    align-self: center;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 8vh;
+}
+/* About Section */
+#about{
+    background-color: salmon;
+}
+#about div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about div h2{
+    font-size: 3.8rem;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    color: #d5fb02cc;
+}
+#about div p{
+    color: rgb(241, 226, 11);
+    font-size: 22px;
+    margin-bottom: 15vh;
+}
+/* Services */
+#services{
+    background-color: saddlebrown;
+}
+#services div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services div h2{
+    font-size: 3.8rem;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    color: beige;
+}
+#services div p{
+    color: rgb(241, 226, 11);
+    font-size: 22px;
+    margin-bottom: 15vh;
+}
+/* Contact Form */
+#contact{
+   background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.5;
+    z-index: -1; */
+    padding: 73px;
+}
+#contact h2{
+    font-size: 3.8rem;
+    margin: 25vh;
+    color: #fd0000;
+}
+#contact form{
+    background-color: rgb(107 112 117);
+    display: inline-block;
+    border: 17px solid #ff73f9;
+}
+
+#contact input{
+    margin: 11px;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    font-size: 21px;
+}
+#contact div{
+    margin: 12px;
+}
+#contact button{
+    border-radius: 6px;
+    width: -webkit-fill-available;
+    height: 12%;
+    cursor: pointer;
+    font-size: 23px;
+}
+/* Footer */
+footer ul{
+    list-style: none;
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+}
+
+footer ul li{
+    padding: 12px;
+    margin: 12px;
+    color: white;
+    font-size: 24px;
+}
