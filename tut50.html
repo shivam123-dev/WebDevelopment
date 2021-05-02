@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript String Functions</title>
+    <style></style>
+</head>
+
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+
+        // first occurence of a substring
+        var position = str.indexOf("is");
+        console.log(position);
+
+        // last occurence of a substring
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+        // Substring from a string
+        // var substr = str.slice(1,6);
+        var substr1 = str.substr(1, 2);
+        console.log(substr1);
+
+        // Used to replace a string with substring and while doing so it does not change the original string.
+        // var replaced = str.replace('string', 'Shivam')
+        // console.log(str)
+        // console.log(replaced)
+
+        // Used for printing the string in uppercase
+        console.log(str.toUpperCase());
+
+        // Used for printing the string in lowercase
+        console.log(str.toLowerCase());
+
+        // Concating of string
+        var newString = str.concat('New String');
+        console.log(newString);
+
+        // Alternative way
+        var newString1 = str + 'New String';
+        console.log(newString1);
+
+        var strWithwhiteSpaces = "      this contains     whitespaces       "
+        console.log(strWithwhiteSpaces);
+        // Used for removing the whitespaces from  starting and ending only
+        console.log(strWithwhiteSpaces.trim());
+
+        // .charAt(position) is used to return the character at the "position"
+        var char3 = str.charAt(2);
+        console.log(char3)
+        // .charCodeAt(position) is used to return the code of the character at the "position"
+        console.log(char3.charCodeAt(2)); // Not very important in web development
+
+        // Used for slicing
+        console.log(str[2]);
+    </script>
+</body>
+
+</html>
