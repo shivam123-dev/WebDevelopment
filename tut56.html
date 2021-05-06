@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        // For accessing the element in HTML with "main" as id
+        let main = document.getElementById('main'); // returns only 1 id
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let containers = document.getElementsByClassName('container'); // returns more than 1 class
+        console.log(containers);
+        // console.log(containers[0]); // prints the 0th container
+        // console.log(containers[1]); // prints the 1st container
+
+        let sel = document.querySelector('.container'); //returns first match of '.container'
+        console.log("Selector returns ",sel);
+        let sel1 = document.querySelector('#nav>li'); //returns first match of '#nav>li'
+        console.log("Selector returns ",sel1);
+
+        let sel0 = document.querySelectorAll('#nav>li'); //returns all the matches of '#nav>li'
+        console.log("Selector returns ",sel0);
+    </script>
+</body>
+</html>
