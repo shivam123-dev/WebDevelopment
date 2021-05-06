@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn {
+        padding: 12px;
+        border-radius: 8px;
+        border: 2px groove black;
+        background-color: red;
+        font-weight: bolder;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- Browser Events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    form Events:
+    submit  
+    focus
+    DOMcontentloaded
+
+    CSS Transitions
+    transitionend -->
+    <!-- Here is a list of some common HTML events-
+
+    Onchange-  An HTML element has been changed
+    Onclick- The user clicks an HTML element
+    Onmouseover-   The user moves the mouse over an HTML element
+    Onmouseout-The user moves the mouse away from an HTML element
+    Onkeydown- The user pushes a keyboard key
+    Onload- The browser has finished loading the page -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quis rerum necessitatibus molestias
+            aliquam tenetur nesciunt dolorum, odit voluptatem labore alias obcaecati provident eius nemo rem quidem
+            facere perspiciatis debitis enim quod velit, minus modi? Ullam, provident architecto. Aut assumenda eos
+            expedita error quia commodi libero nam tenetur, porro placeat molestiae laborum impedit? Consectetur
+            corporis repellat minima voluptatibus asperiores, aut sint vero iste ad ipsam consequuntur, voluptates quis
+            inventore officiis est non eveniet praesentium! Repellendus, nemo libero. Atque possimus fugiat praesentium
+            facere, laudantium soluta omnis necessitatibus minima explicabo nemo sunt ipsam voluptatem vero, odit
+            accusamus sit ab eaque maxime alias expedita iste. Quo sequi vitae et eligendi nesciunt rem animi
+            necessitatibus similique, eum laborum molestiae blanditiis facilis, odit reprehenderit quasi consequatur
+            officiis voluptatem temporibus ducimus neque dicta in possimus. Eaque repellendus quos quo. Mollitia fuga
+            voluptates culpa hic iure quasi sequi ab possimus eius dicta praesentium, id adipisci blanditiis autem
+            tempore fugit unde necessitatibus pariatur nulla laborum sint nostrum ducimus accusamus. Dolore, aut
+            doloribus molestiae culpa quo veniam aspernatur aliquam nam animi, amet, eveniet voluptates commodi dolorem.
+            Fuga tenetur incidunt deserunt voluptates qui voluptatibus perferendis totam pariatur eligendi consequatur
+            veniam hic beatae debitis reiciendis non architecto odit tempore ducimus, corporis unde vel in! Odit soluta
+            perferendis officiis provident repudiandae architecto, libero aperiam in veritatis, optio distinctio sed
+            nobis nihil dolore, ducimus sunt pariatur dicta? Labore at tempore accusamus, accusantium iste optio ipsam
+            ducimus.</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            //    alert("Mouse Inside"); 
+            console.log("Mouse inside");
+        });
+        para.addEventListener('mouseout', function run() {
+            //    alert("Mouse went Outside"); 
+            console.log("Mouse went Outside");
+        });
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none')
+                para.style.display = 'none';
+            else
+                para.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>
