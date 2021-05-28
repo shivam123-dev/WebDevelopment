@@ -1,0 +1,29 @@
+//- index.pug
+doctype html
+html
+  head
+    title Shivam Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection 
+        div Welcome to Shivam's Dance Academy 
+        div.small Live Learn Dance Repeat
+    section#missionSection 
+        h2 Our Mission
+    section#sponsersSection 
+        h2 Our Sponsers
+    
+    footer#footer 
+        | Our footer here
+
+    script
+      include ../static/script.js

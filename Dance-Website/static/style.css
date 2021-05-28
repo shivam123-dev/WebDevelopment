@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    background-color: rgb(233, 30, 99, 1);
+    padding: 14px 14px;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+}
+#navbar li a{
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 4px 29px;
+    font-weight: bold;
+}
+#navbar li a:hover{
+    color: #607d8b;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 4px 29px;
+}
+#introSection{
+    padding-bottom: 103px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url("../static/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+#introSection .small{
+    font-size: 1.8rem;
+    padding: 3px;
+}
+#sponsersSection{
+    height: 300px;
+    background-color: #bd1b1bb6;
+}
+#sponsersSection h2{
+    text-align: center;
+    padding-top: 36px;
+    font-family: 'Brygada 1918', serif;
+}
+#footer{
+    height: 100px;
+    background-color: black;
+}
