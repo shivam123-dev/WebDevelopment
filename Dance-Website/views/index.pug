@@ -6,8 +6,11 @@ html
     style
       include ../static/style.css
   body
-    nav#navbar.top 
+    nav#navbar
         ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | SDA
             li #[a(href="/") Home]
             li #[a(href="/") About]
             li #[a(href="/") Services]
@@ -17,14 +20,31 @@ html
     section#introSection 
         div.large Welcome to Shivam's Dance Academy 
         div.small Live Learn Dance Repeat
+    
     section#missionSection 
         h2 Our Mission
         div.card 
             h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
         div.card 
             h3 Dance The Way you Like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
         div.card 
             h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    
     section#sponsersSection 
         h2 Our Sponsers
     
