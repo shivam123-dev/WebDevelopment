@@ -8,7 +8,7 @@
 }
 #navbar{
     background-color: rgb(233, 30, 99, 1);
-    padding: 14px 14px;
+    padding: 21px 14px;
     font-family: 'Baloo Chettan 2', cursive;
 }
 #navbar ul{
@@ -21,7 +21,7 @@
 }
 #navbar li a{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 4px 29px;
     font-weight: bold;
@@ -44,13 +44,48 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 425px;
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
 }
+#introSection .large{
+    font-weight: bolder;
+}
 #introSection .small{
+    font-weight: bold;
     font-size: 1.8rem;
     padding: 3px;
+}
+#missionSection{
+    height: 300px;
+    background-color: white;
+    width: 67%;
+    margin: auto;
+
+}
+#missionSection h2{
+    text-align: center;
+    padding-top: 36px;
+    font-family: 'Brygada 1918', serif;
+    font-size: 39px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 27%;
+    margin: 33px 28px;
+    height: 48%;
+    display: inline-block;
+    background-color: #e91e631f;
+    transition: 0.3s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-family: 'Baloo Chettan 2', cursive;
 }
 #sponsersSection{
     height: 300px;
@@ -60,8 +95,11 @@
     text-align: center;
     padding-top: 36px;
     font-family: 'Brygada 1918', serif;
+    font-size: 39px;
 }
+
 #footer{
     height: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
