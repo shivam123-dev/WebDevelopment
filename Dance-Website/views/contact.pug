@@ -2,6 +2,7 @@ extends base.pug
 
 block scripts
     script(src = "../static/index.js")
+    script(src = "../static/contact.js")
 
 block style
     style 
@@ -16,5 +17,5 @@ block content
             input(type="email",class="myInput",name="email",placeholder = "Enter your email ID", required)
             input(type="text",class="myInput",name="address",placeholder = "Enter your address", required)
             input(type="text",class="myInput",name="desc",placeholder = "Enter your concern",required)
-            button(class="btn")
+            button(class="btn", id="submitForm")
                 | Submit
