@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS of mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        #attribution {
+            color: white;
+            text-decoration: NONE;
+            letter-spacing: 1px;
+        }
+    </style>
+    <title>Corona Map</title>
+</head>
+
+<body>
+    <!-- Div of mapbox -->
+    <div id='map'>
+        <div class="mapboxgl-ctrl-top-left">
+            <a href="www.trackcorona.live" id="attribution">TrackCorona</a>
+        </div>
+    </div>
+
+
+    </footer>
+</body>
+<!-- Mapbox script -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<!-- Access Token for Mapbox -->
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2hpdmFtMTIzLWRldiIsImEiOiJja3B1dWl3NG0wZ2EyMnZuemtldmdpZ2J3In0.GHAPmi3YOWhGLe4FG4dj8A';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 1,
+        center: [0, 20]
+    });
+
+</script>
+<!-- Our script file -->
+<script src="index.js"></script>
+
+</html>
