@@ -1,3 +1,4 @@
+updateMap();
 function updateMap() {
     console.log('Updating map with realtime data of 20 min')
     fetch('https://www.trackcorona.live/api/countries') // used to fetch the api
